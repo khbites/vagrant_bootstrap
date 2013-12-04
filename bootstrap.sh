@@ -26,6 +26,22 @@ apt-get install -y git
 apt-get install -y apache2
 rm -rf /var/www
 ln -fs /vagrant /var/www
+# Do the following manually
+# create /etc/apache2/sites-available/zurb from the default file
+# add the following directory to access your zurb templare share
+
+        # Alias /zurb/ "/home/vagrant/vagrant_zurb_template/"
+        # <Directory "/home/vagrant/vagrant_zurb_template/">
+                # Options Indexes FollowSymLinks MultiViews
+                # AllowOverride None
+                # Order allow,deny
+                # allow from all
+        # </Directory>
+
+# cd ../sites-enabled
+# sudo ln -fs ../sites-available/zurb . 
+# sudo rm 00*default
+
 
 ## Ruby
 apt-get install ruby1.9.3
