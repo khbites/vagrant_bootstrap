@@ -10,6 +10,8 @@
 #
 # Author: @khbites github.com/khbites
 #
+# Install: First, get the vbguest plugin
+#               $ vagrant plugin install vagrant-vbguest
 #
 # Todos:
 #        mount apt-cache to speed-up provisioning https://gist.github.com/millisami/3798773
@@ -28,7 +30,7 @@ rm -rf /var/www
 ln -fs /vagrant /var/www
 # Do the following manually
 # create /etc/apache2/sites-available/zurb from the default file
-# add the following directory to access your zurb templare share
+# add the following directory to access your zurb template share
 
         # Alias /zurb/ "/home/vagrant/vagrant_zurb_template/"
         # <Directory "/home/vagrant/vagrant_zurb_template/">
