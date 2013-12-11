@@ -1,2 +1,2 @@
-export git_user.name = "Your Name"
-export git_user.email = "your@email.com"
+export git_username="Your Name"
+export git_useremail="your@email.com"

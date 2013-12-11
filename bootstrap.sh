@@ -41,8 +41,8 @@ if [ ! -f /home/vagrant/.ssh/id_rsa ]
   chmod -R 600 /home/vagrant/.ssh/*
 fi
 
-git config --global user.name "$git_user.name"
-git config --global user.email "$git_user.email"
+git config --global user.name "$git_username"
+git config --global user.email "$git_useremail"
 
 ## Apache
 apt-get install -y apache2
