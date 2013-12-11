@@ -2,3 +2,4 @@
 Vagrantfile
 cookbooks/*
 .ssh/*
+settings.sh

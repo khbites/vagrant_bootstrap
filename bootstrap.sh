@@ -16,6 +16,9 @@
 # Todos:
 #        mount apt-cache to speed-up provisioning https://gist.github.com/millisami/3798773
 
+# Import Settings via global vars (i.e: git_user.name)
+sh ./settings.sh
+
 apt-get update
 
 ## update all packages
@@ -38,7 +41,8 @@ if [ ! -f /home/vagrant/.ssh/id_rsa ]
   chmod -R 600 /home/vagrant/.ssh/*
 fi
 
-
+git config --global user.name "$git_user.name"
+git config --global user.email "$git_user.email"
 
 ## Apache
 apt-get install -y apache2
