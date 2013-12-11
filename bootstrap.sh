@@ -85,8 +85,20 @@ npm install -g bower
 gem install foundation
 gem install compass
 
+cd /home/vagrant/vagrant_zurb_template
+bower install -F modernizr
+# thought this is needed, but a rm -rf on the modernizr dir & bower update fixed the missing js
+# npm install -g grunt-cli
+# npm install -g grunt
+
+bower install -F Font-Awesome
+bower install -F foundation
+bower install -F jquery
+bower install -F modernizr
+bower install -F foundation-icon-fonts
+
 # create zurb template with:
 # "foundation new vagrant_zurb_template" (in /home/vagrant)
-# You need to change the cache-pass, as you get errors with running
+# You need to change the cache-path, as you get errors with running
 # "compass watch" on shared folders (see echo "cache_path = \"/tmp/.sass-cache\"" >> config.rb)
 # echo "cache_path = \"/tmp/.sass-cache\"" >> config.rb
