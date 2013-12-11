@@ -28,6 +28,17 @@ apt-get install -y git
 # ssh-keygen -t rsa -b 4096 -C "your_email"
 # cat .ssh/id_rsa.pub
 # got to github to add the public key https://github.com/settings/ssh
+# Test if it is working with ssh -T git@github.com
+# cp /home/vagrant/.ssh /vagrant
+
+# Copy existing SSH github keys, if not already in directory
+if [ ! -f /home/vagrant/.ssh/id_rsa ]
+ then
+  cp -Rf /vagrant/.ssh /home/vagrant
+  chmod -R 600 /home/vagrant/.ssh/*
+fi
+
+
 
 ## Apache
 apt-get install -y apache2
