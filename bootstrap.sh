@@ -24,11 +24,16 @@ apt-get upgrade -y
 ## Git
 apt-get install -y git
 
+# Generate a ssh key and put it into github
+# ssh-keygen -t rsa -b 4096 -C "your_email"
+# cat .ssh/id_rsa.pub
+# got to github to add the public key https://github.com/settings/ssh
+
 ## Apache
 apt-get install -y apache2
 rm -rf /var/www
-ln -fs /vagrant /var/www
-# Do the following manually
+ln -fs /home/vagrant/vagrant_zurb_template /var/www
+# Or do the following manually
 # create /etc/apache2/sites-available/zurb from the default file
 # add the following directory to access your zurb template share
 
