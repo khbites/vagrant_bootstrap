@@ -1,5 +1,5 @@
 .vagrant/*
-Vagrantfile
 cookbooks/*
 .ssh/*
 settings.sh
+tmp/*
