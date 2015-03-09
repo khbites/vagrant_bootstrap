@@ -13,8 +13,10 @@ I use [Chocolatey](https://chocolatey.org/packages) to install packages so I do 
 ```
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-cachier
-
+vagrant plugin install vagrant-winnfsd
 ```
+
+NFS for windows: https://github.com/GM-Alex/vagrant-winnfsd
  
 ### Ruby
 

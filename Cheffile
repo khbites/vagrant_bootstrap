@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'certified'
+#require 'certified'
 
 site 'http://community.opscode.com/api/v1'
 
